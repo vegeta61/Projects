@@ -93,13 +93,20 @@ class TicTacToe {
 						return(7);
 					if(moves[5] == 0)
 						return(5);
+					if(moves[3] == 0)
+						return(3);
+					if(moves[1] == 0)
+						return(1);
 				}
-				int r = (int)Math.random() * 100 % 9;
-				if(moves[r] != 0)
-					r = (int)Math.random() * 100 % 9;
-
-				return(r);
 			}
+			int pos = 0;
+			for(int i = 0; i < moves.length; i++) {
+				if(moves[i] == 0) {
+					pos = i;
+					break;
+				}
+			}
+			return(pos);
 		}
 	}
 	public static void draw(char moves[]) {
