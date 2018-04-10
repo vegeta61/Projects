@@ -88,7 +88,9 @@ class TicTacToe {
 			else if(wins(moves, 'x', 'o') != -1)
 				return(wins(moves, 'x', 'o'));
 			else {
-				if(moves[4] == 'o') {
+				if(moves[4] != 0) {
+					if(moves[2] == 0 && moves[8] == 'x' && moves[4] == 'x')
+						return(2);
 					if(moves[7] == 0)
 						return(7);
 					if(moves[5] == 0)
