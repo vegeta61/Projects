@@ -1,2 +1,2 @@
-# tic-tac-toe
-A game of tic tac toe which is unbeatable
+# Unbeatable Tic-Tac-Toe
+Regularly Updating This For Better Experince
